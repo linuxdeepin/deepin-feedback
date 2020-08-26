@@ -3,9 +3,9 @@
 #feedbackserver generating &
 if [ x$LANG = xzh_CN.UTF-8 ]
 then
-    gvfs-open "http://bbs.chinauos.com/forum.php?mod=forumdisplay&fid=51"
+    gvfs-open "https://bbs.chinauos.com"
 else
-    gvfs-open "http://bbs.chinauos.com/forum.php?mod=forumdisplay&fid=51"
+    gvfs-open "https://bbs.chinauos.com"
 fi
 #result_tag="deepin-feedback-all-$(date "+%Y%m%d-%H%M%S")"
 #output_path=${PWD}/${result_tag}.tar.gz
