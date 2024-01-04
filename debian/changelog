@@ -1,3 +1,15 @@
+deepin-feedback (6.0.0) unstable; urgency=medium
+
+  * fix: export GOCACHE
+  * feat: 补充翻译内容
+  * feat: 传递应用名到网站
+  * feat: 传递系统版本号到网站
+  * feat: 在应用菜单中使用dbus启动
+  * chore: add cicd workflows
+  * feat: use new dbus interface(Issue: https://github.com/linuxdeepin/developer-center/issues/6310)
+
+ -- myml <wurongjie@deepin.org>  Thu, 04 Jan 2024 10:49:15 +0800
+
 deepin-feedback (5.1.4) unstable; urgency=medium
 
   * remove Desktop feedback.desktop.

@@ -1,11 +1,11 @@
 #!/bin/bash -e
 # 从dtk菜单启动会附带应用名
 from_app=$1
-# 如果从dtk菜单启动，使用dbus调用自己，避免处于玲珑容器中无法提权
+# 如果从dtk菜单启动，使用dbus调用自己，避免处于玲珑容器中无法提权搜集日志
 from_dbus=$2
 if [[ -n "$from_app" && ! -n "$from_dbus" ]]; then
   echo "not form dbus"
-  dbus-send --print-reply --dest=com.deepin.SessionManager /com/deepin/StartManager com.deepin.StartManager.RunCommand string:deepin-feedback array:string:"$1","dbus"
+  gdbus call --session --dest=org.desktopspec.ApplicationManager1 --object-path /org/desktopspec/ApplicationManager1/deepin_2dfeedback --method org.desktopspec.ApplicationManager1.Application.Launch "" "['$1', 'dbus']" {}
   exit
 fi
 export TEXTDOMAIN=deepin-feedback
