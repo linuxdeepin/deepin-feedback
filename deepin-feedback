@@ -10,7 +10,7 @@ if [[ -n "$from_app" && ! -n "$from_dbus" ]]; then
 fi
 export TEXTDOMAIN=deepin-feedback
 # 应用名
-app_name="Deepin User Feedback"
+app_name=$(gettext "Deepin User Feedback")
 # 应用图标
 app_icon="deepin-feedback"
 # 授权前提示
