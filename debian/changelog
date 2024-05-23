@@ -1,3 +1,9 @@
+deepin-feedback (6.0.1) unstable; urgency=medium
+
+  * fix: appName is not translated(Issue: https://github.com/linuxdeepin/developer-center/issues/7889)
+
+ -- myml <wurongjie1@gmail.org>  Thu, 23 May 2024 15:07:41 +0800
+
 deepin-feedback (6.0.0) unstable; urgency=medium
 
   * fix: export GOCACHE
